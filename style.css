@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gothamMedium;
+    src: url(./assets/fonts/GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: gothamBold;
+    src: url(./assets/fonts/GothamBold.ttf);
+}
+
+@font-face {
+    font-family: gothamLight;
+    src: url(./assets/fonts/GothamLight.ttf);
+}
+
+.main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1080px;
+    width: 90%;
+    height: 110vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.title{
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+}
+.title h1{
+    font-family: gothamMedium;
+    font-size: 48px;
+}
+.title span{
+    color: rgb(17,74,141);
+}
+
+.containerBox{
+    width: 100%;
+    height: 85%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-container{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 46.5%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.card1{
+    background-image: url("./assets/images/Image-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card2{
+    background-image: url("./assets/images/Image-2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card3{
+    background-image: url("./assets/images/Image-3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card4{
+    background-image: url("./assets/images/Image-4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.shadow{
+    width: 100%;
+    height: 44%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.06));
+}
+.shadow h1{
+    color: white;
+    font-size: 28px;
+    font-family: gothamMedium;
+    font-weight: 400;
+    text-align: center;
+}
+.shadow span{
+    color: rgb(254, 75, 114);
+    /* color: #ffc859; */
+}
+
+
+.rectBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 0%;
+    height: 0;
+    opacity: 0;
+    z-index: 999999;
+    color: white;
+    position: absolute;
+    bottom: 7%;
+    background-color: rgb(254, 75, 114);
+}
+.rectBox h1{
+    font-family: gothamMedium;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    width: 82%;
+    opacity: 0;
+}
+
+.rectBox p{
+    text-align: center;
+    width: 82%;
+    font-family: gothamLight;
+    padding: 19px;
+    font-size: 16px;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .title h1{
+        font-size: 32px;
+    }
+
+    .containerBox{
+        justify-content: flex-start;
+        gap: 25px;
+        height: 100%;
+    }
+
+    .card-container{
+        width: auto;
+        height: 65%;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 85%;
+    }
+
+    .card2{
+        background-position: 50% 30%;
+    }
+
+    .card3{
+        background-position: top;
+    }
+
+    .card4{
+        background-position: 50% 30%;
+    }
+
+    .shadow h1{
+        font-size: 19px;
+    }
+
+    .rectBox h1{
+        font-size: 19px;
+        padding-top: 15px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .rectBox p{
+        width: 100%;
+        padding: 2px;
+        font-size: 15px;
+    }
+  }
